@@ -5,11 +5,13 @@ import {BsSearch} from 'react-icons/bs'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import useAuth from '../hooks/useAuth'
 //import BasicMenu from './BasicMenu'
 
 
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
+    //const{ logout }= useAuth
   
     useEffect(() => {
       const handleScroll = () => {
